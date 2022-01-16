@@ -24,6 +24,11 @@ public:
 
   void insert(Node<T> *node);
 
+
+  /*
+  Output
+  */
+  void printList();
 };
 
 #include "linkedList.tpp"

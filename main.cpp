@@ -12,4 +12,5 @@ int main(){
   list.insert(node1);
   list.insert(node2);
 
+  list.printList();
 }

@@ -39,3 +39,18 @@ void MyLinkedList<T>::insert(Node<T> *newNode){
     tail = newNode;
   }
 }
+
+
+/*
+Output
+*/
+template <class T>
+void MyLinkedList<T>::printList(){
+
+  Node<T> *currentNode = head;
+  while(currentNode != NULL){
+    cout << currentNode->getData() << " -> ";
+    currentNode = currentNode->next;
+  }
+  cout << endl;
+}
