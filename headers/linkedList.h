@@ -11,6 +11,8 @@ private:
   Node<T> *head;
   Node<T> *tail;
 
+  int listLength;
+
 public:
 
   /*
@@ -29,6 +31,7 @@ public:
   Output
   */
   void printList();
+  Node<T>* getNodeAt(int index);
 };
 
 #include "linkedList.tpp"
