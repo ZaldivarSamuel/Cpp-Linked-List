@@ -12,6 +12,7 @@ class Node{
     /*
     Constructors
     */
+    Node();
     Node(T d);
 
     /*
@@ -34,6 +35,12 @@ using namespace std;
 /*
 Constructors
 */
+
+template <class T>
+Node<T>::Node(){
+  
+}
+
 template <class T>
 Node<T>::Node(T d){
   this->data = d;
