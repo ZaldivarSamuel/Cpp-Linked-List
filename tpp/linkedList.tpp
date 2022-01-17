@@ -45,6 +45,10 @@ void MyLinkedList<T>::insert(Node<T> *newNode){
   listLength++;
 }
 
+template <class T>
+void MyLinkedList<T>::deleteAt(int index){
+
+}
 
 /*
 Output
@@ -63,13 +67,16 @@ void MyLinkedList<T>::printList(){
 template <class T>
 Node<T>* MyLinkedList<T>::getNodeAt(int index){
 
+  //Check to see if index is in bounds
   if((index < 0 || index > listLength) ||
       listLength == 0){
     cout << "Index: " << index << " is out of bounds." << endl;
     exit(1);
-    //return NULL;
   }
 
+  /*
+  Traverse the list until i = index
+  */
   Node<T> *currentNode = head;
   int i = 0;
 
@@ -78,6 +85,7 @@ Node<T>* MyLinkedList<T>::getNodeAt(int index){
     i++;
   }
 
+  //Error checking
   if(currentNode == NULL){
     cout << "Node at index: " << index << " is NULL.";
     exit(1);
