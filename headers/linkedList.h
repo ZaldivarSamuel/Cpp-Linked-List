@@ -25,7 +25,7 @@ public:
   */
 
   void insert(Node<T> *node);
-
+  void deleteAt(int index);
 
   /*
   Output

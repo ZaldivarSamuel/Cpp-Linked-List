@@ -29,3 +29,12 @@ template <class T>
 void Node<T>::setData(T d){
   this->data = d;
 }
+
+
+/*
+Deconstructor
+*/
+template <class T>
+Node<T>::~Node(){
+  this->next = NULL;
+}

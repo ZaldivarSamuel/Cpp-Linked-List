@@ -20,6 +20,11 @@ class Node{
     */
     T getData();
     void setData(T);
+
+    /*
+    Deconstructor
+    */
+    ~Node();
 };
 
 #include "node.tpp"

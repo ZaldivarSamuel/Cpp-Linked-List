@@ -16,5 +16,16 @@ int main(){
 
   list.printList();
 
-  cout << list.getNodeAt(2)->getData() << endl;
+  list.deleteAt(1);
+  list.printList();
+
+  list.deleteAt(0);
+
+  list.printList();
+
+  list.deleteAt(0);
+  list.printList();
+
+  list.deleteAt(0);
+  list.printList();
 }
